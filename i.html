@@ -1032,8 +1032,8 @@ body {
                 // وضعیت غیرفعال (آینده)
                 if (i > CURRENT_YEAR) {
                     item.classList.add('disabled');
-                    item.dataset.popupTitle = "NOTICE";
-                    item.dataset.popupBody = `Result for ${i} is not yet available.`;
+                    item.dataset.popupTitle = "Don't Rush";
+                    item.dataset.popupBody = `Wait For ${i} To Arrive.`;
                 } else {
                     item.addEventListener('click', () => handleYearSelection(i, item));
                 }
@@ -1301,6 +1301,7 @@ body {
 </body>
 
 </html>
+
 
 
 
